@@ -11,9 +11,9 @@ const People: React.FC<Props> = ({people}) => {
     <>
       <h4 className={'text-primary'}>People</h4>
       {
-        people.map((person) => {
+        people.map((person, index) => {
           return (
-              <Person person={person} key={person.email}/>
+              <Person person={person} key={index}/>
           );
         })
       }
